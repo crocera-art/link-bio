@@ -2,7 +2,8 @@
     "rewrites":[
     {
         "source":"/:path*",
-        "destination":"/api"
+        "has":[{"type":"host", "value":"api.crocera.art"}],
+        "destination":"/api/index.js"
     }
     ]
 }
