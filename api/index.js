@@ -1,3 +1,6 @@
+const links = require("../links.json")
+
+
 module.exports = (req, res) => {
   const origin = req.headers.origin;
 
@@ -7,11 +10,11 @@ module.exports = (req, res) => {
   ];
   
   if (allowedOrigins.includes(origin)) {
-    res.setHeader("Access-Control-Allow-Origin", origin);
+      res.setHeader("Access-Control-Allow-Origin", origin);
+      res.setHeader("Access-Control-Allow-Methods", "GET_OPTIONS");
+      res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
   }
 
-  res.status(200).json({
-    status: "Sucesso",
-    message: "API funcionando corretamente"
-  });
+  res.status(200).json(links);
 };
