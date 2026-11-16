@@ -1,5 +1,5 @@
-import linksHandler from "../functions/links.js"
+const linksHandler = require("../functions/links.js");
 
-export default async function handler(req, res) =>{
-    return await linksHandler(req, res)
-}
+module.exports = (req, res) => {
+  return linksHandler(req, res);
+};
