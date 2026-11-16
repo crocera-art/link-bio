@@ -1,4 +1,4 @@
-module.exports = (res, req)=>{
+module.exports = (req, res)=>{
     const origin = req.headers.origin;
 
     const alloedOrigins = [
