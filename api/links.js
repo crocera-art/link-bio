@@ -2,8 +2,8 @@ module.exports = (req, res)=>{
     const origin = req.headers.origin;
 
     const alloedOrigins = [
-        "www.crocera.art",
-        "crocera.art"
+        "https://www.crocera.art",
+        "https://crocera.art"
     ];
     if (alloedOrigins.includes(origin)) {
         res.setHeader("Access-Control-Allow-Origin", origin)
