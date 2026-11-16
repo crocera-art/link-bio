@@ -29,11 +29,12 @@ ul{
     list-style:none;
     width:70vw;
     padding:5vh;
-    margin:10vh 0;
+    margin:5vh 0;
     display:flex;
     flex-direction:column;
     align-items:center;
     gap:20px;
+    min-height:30vh;
     background:#1b1b1b;
     box-shadow:3px 4px #000;
 }
