@@ -1,4 +1,4 @@
-fetch("https:://api.crocera.art")
+fetch("https://api.crocera.art")
 .then(response => response.json())
 .then(data =>{
     const list = document.querySelector("#link-list")
@@ -15,5 +15,5 @@ fetch("https:://api.crocera.art")
         li.appendChild(a)
         list.appendChild(li)
     });
-    .catch(erro => console.error("falha ", erro))
 })
+.catch(erro => console.error("falha ", erro))
