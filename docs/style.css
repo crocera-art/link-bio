@@ -1,7 +1,7 @@
 *{padding:0;margin:0;}
 
 body{
-    font:bolder 16pt 'Courier';
+    font:bolder 16pt 'Arial';
     align-items:center;
     text-align:center;
     letter-spacing:2px;
@@ -17,6 +17,6 @@ body{
 }
 
 a{
-    color:#fff;
+    color:#000;
     text-decoration:none;
 }
